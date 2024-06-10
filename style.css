@@ -23,6 +23,12 @@
 	scroll-behavior: smooth;
 }
 
+body {
+	background-image: url('wall.jpg');
+	background-size: contain;
+	background-repeat: round;
+}
+
 #invitation {
 	display: inline-block;
 	transition: opacity 2s ease-out;
