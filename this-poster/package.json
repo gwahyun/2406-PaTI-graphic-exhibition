@@ -1,0 +1,27 @@
+{
+	"name": "neocities-this-poster",
+	"version": "1.0.0",
+	"description": "2024 PaTI poster exhibition",
+	"main": "index.js",
+	"scripts": {
+		"test": "test",
+		"build": "npx tailwindcss -i ./style.css -o ./src/output.css --watch"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/gwahyun/2406-PaTI-graphic-exhibition.git"
+	},
+	"keywords": [
+		"graphic"
+	],
+	"author": "kimgwahyun",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/gwahyun/2406-PaTI-graphic-exhibition/issues"
+	},
+	"homepage": "https://github.com/gwahyun/2406-PaTI-graphic-exhibition#readme",
+	"devDependencies": {
+		"tailwindcss": "^3.4.4"
+	},
+	"type": "module"
+}

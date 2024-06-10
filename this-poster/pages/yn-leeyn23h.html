@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>pío, pío Graphic Club | 소요</title>
+		<link href="/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="/src/output.css" rel="stylesheet" type="text/css" media="all" />
+	</head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/css/glide.core.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css"/>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const slide = new Glide(`.glide`, {
+				autoplay: 3500,
+				focusAt: 'center',
+    			type: "carousel",
+   				startAt: 0,
+    			perView: 1,
+    			keyboard: true,
+				hoverpause: true,
+				gap:0,
+				breakpoints:{		
+  1200: {
+    perView: 1
+  }, 3840 :{
+	perView: 3
+  }
+}
+				
+				}).mount();
+
+
+				const slide2 = new Glide(`#glide2`, {
+				autoplay: 3500,
+				focusAt: 'center',
+    			type: "carousel",
+   				startAt: 0,
+    			perView: 1,
+    			keyboard: true,
+				hoverpause: true,
+				gap:0,
+							breakpoints:{		
+  1200: {
+    perView: 1
+  }, 3840 :{
+	perView: 2
+  }
+}
+				}).mount();
+
+
+			const invitation = document.getElementById('invitation');
+
+			setTimeout(() => {
+				invitation.classList.add('fade-out');
+			}, 3000);
+
+			invitation.addEventListener('transitionend', function () {
+				if (invitation.classList.contains('fade-out')) {
+					invitation.remove();
+				}
+			});
+
+			const poster = document.getElementById('poster');
+			setTimeout(function () {
+				poster.classList.add('visible');
+			}, 3100);
+
+		});
+	</script>
+	    <style>
+			.glide {
+				position: relative;
+				overflow: visible; /* 부모 요소의 overflow를 visible로 설정 */
+			}
+	
+			.glide__bullets {
+				position: absolute;
+				bottom: -50px; /* 부모 요소의 아래쪽으로 벗어나도록 설정 */
+				left: 50%;
+			}
+		</style>
+		<body class="bg-[url('/wall.jpg')] bg-contain bg-repeat-round">
+			<header class="top-0 fixed shadow-md z-50">
+				<h1 class="font-extralight text-xl p-4 bg-white w-[92px]">
+					<a href="/index.html">pío, pío Graphic Club</a>
+				</header>
+			<div id="invitation" class="z-10 fixed  bg-white w-full h-full">
+				<header class="top-0 fixed shadow-md">
+					<h1 class="font-extralight text-xl p-4 bg-white w-[92px]">
+						<a href="/index.html">pío, pío Graphic Club</a>
+					</header>
+				<content class="min-h-svh flex items-center justify-center">
+					<img src="/src/yn-leeyn23h/invitation.png" class="animate-pulse xl:w-1/3" />
+				</content>
+			</div>
+	
+			<content
+				id="poster"
+				class="flex flex-col justify-center items-center p-4 min-h-svh"
+			>
+			<div class="glide">
+				<div class="glide__track" data-glide-el="track">
+				  <ul class="glide__slides">
+					<li class="glide__slide"><img src="/src/yn-leeyn23h/poster.png"  class="object-cover"/></li>
+					<li class="glide__slide"><img src="/src/yn-leeyn23h/poster-2.png" class="object-cover"/></li>
+				  </ul>
+				  
+				</div>
+		
+				<div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                </div>
+			  </div>
+				<a href="#book" class="absolute bottom-0">
+					<svg
+						class="animate-bounce"
+						width="25"
+						height="21"
+						viewBox="0 0 25 21"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M23.3253 1.25L12.5 20L1.67468 1.25L23.3253 1.25Z"
+							fill="#F0E97E"
+							stroke="black"
+						/>
+					</svg>
+				</a>
+			</content>
+			<content class="relative">
+			<article
+				id="book"
+				class="min-h-svh p-4 space-y-4 flex flex-col items-center justify-center "
+			>
+
+			<div id="glide2" class="glide">
+				<div class="glide__track" data-glide-el="track">
+				  <ul class="glide__slides">
+					
+					<li class="glide__slide"><img src="/src/yn-leeyn23h/book page_/2.png"  class="object-cover"/></li>
+					<li class="glide__slide"><img src="/src/yn-leeyn23h/book page_/3.png"  class="object-cover"/></li>
+					<li class="glide__slide"><img src="/src/yn-leeyn23h/book page_/4.png"  class="object-cover"/></li>
+					<li class="glide__slide"><img src="/src/yn-leeyn23h/book page_/5.png"  class="object-cover"/></li>
+					<li class="glide__slide"><img src="/src/yn-leeyn23h/book page_/6.png"  class="object-cover"/></li>
+					<li class="glide__slide"><img src="/src/yn-leeyn23h/book page_/7.png"  class="object-cover"/></li>
+					<li class="glide__slide"><img src="/src/yn-leeyn23h/book page_/8.png"  class="object-cover"/></li>
+					<li class="glide__slide"><img src="/src/yn-leeyn23h/book page_/9.png"  class="object-cover"/></li>
+
+				  </ul>
+				  
+				</div>
+				<div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+					<button class="glide__bullet" data-glide-dir="=2"></button>
+					<button class="glide__bullet" data-glide-dir="=3"></button>
+					<button class="glide__bullet" data-glide-dir="=4"></button>
+					<button class="glide__bullet" data-glide-dir="=5"></button>
+					<button class="glide__bullet" data-glide-dir="=6"></button>
+					<button class="glide__bullet" data-glide-dir="=7"></button>
+					<button class="glide__bullet" data-glide-dir="=8"></button>
+                </div>
+			  </div>
+			  <a href="#text" class="absolute bottom-0">
+				<svg
+					class="animate-bounce"
+					width="25"
+					height="21"
+					viewBox="0 0 25 21"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="M23.3253 1.25L12.5 20L1.67468 1.25L23.3253 1.25Z"
+						fill="#F0E97E"
+						stroke="black"
+					/>
+				</svg>
+			</a>
+			</article>
+		
+		</content>
+
+
+
+		<content class="relative">
+			<article
+				id="text"
+				class="min-h-svh p-4 space-y-4 flex flex-col items-center justify-center "
+			>
+
+
+
+		<div class="bg-white p-4 xl:w-1/3">
+			<h1 class="font-bold text-3xl">이 포스터는</h1>
+			<h1 class="font-bold text-3xl">
+				'팔기교단'에 대한 포스터다.
+			</h1>
+			<p class="break-all">
+				팔기교단은 고대의 선지자
+				제노폰의 가르침을 바탕으로 8가지 기를 수련한다면 우주와 인간, 자연을
+				통틀어 진정한 내면의 조화와 깨달음에 이를 수 있다는 교리를 가지고 있다.
+				초대장에는 박재홍 후대 선지자께서 당신을 팔기교단으로 초대한다는 환영의
+				말을 전하고있다.
+			</p>
+			<div class="flex justify-end items-center space-x-4">
+				<h1>이유나.소요</h1>
+			</div>
+		</div>
+		<a href="#poster" class="absolute bottom-0 rotate-180" style="margin:0 auto">
+			<svg
+				class="animate-bounce"
+				width="25"
+				height="21"
+				viewBox="0 0 25 21"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M23.3253 1.25L12.5 20L1.67468 1.25L23.3253 1.25Z"
+					fill="#F0E97E"
+					stroke="black"
+				/>
+			</svg>
+		</a>
+			</article>
+			</content>
+
+			<nav
+				id="menu"
+				class="fixed inset-0 bg-black opacity-75 h-full w-full invisible z-50"
+			>
+				<ul
+					class="flex flex-col justify-center items-center h-full text-2xl font-extralight space-y-2 text-white"
+				>
+					<li><a href="/pages/yn-chamk21h.html">차차</a></li>
+					<li><a href="/pages/yn-sohnjy21h.html">군밤</a></li>
+					<li><a href="/pages/yn-kimnh21h.html">나현</a></li>
+					<li><a href="/pages/yn-parkws23h.html">우성</a></li>
+					<li><a href="/pages/yn-parkjy23h.html">서로</a></li>
+					<li><a href="/pages/yn-muny19h.html">율</a></li>
+					<li><a href="/pages/yn-jeonsb22h.html">수빈</a></li>
+					<li><a href="/pages/yn-parksm24h.html">모아</a></li>
+					<li><a href="/pages/yn-leeyn23h.html">소요</a></li>
+					<li><a href="/pages/yn-kimgh24h.html">과</a></li>
+					<li><a href="/pages/yn-hang24d.html">결</a></li>
+				</ul>
+			</nav>
+			<nav id="menu-button" class="bottom-0 right-0 fixed shadow-lg bg-white z-50">
+				<button class="p-4 w-fit">
+					<a class="nav-toggle">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</a>
+				</button>
+			</nav>
+			<script>
+				const menuButton = document.getElementById('menu-button');
+				const menu = document.getElementById('menu');
+	
+				console.log(menuButton, menu);
+				menuButton.addEventListener('click', () => {
+					menu.classList.toggle('invisible');
+				});
+	
+				let navToggle = document.querySelector('.nav-toggle');
+				let bars = document.querySelectorAll('.bar');
+	
+				function toggleHamburger(e) {
+					bars.forEach((bar) => bar.classList.toggle('x'));
+				}
+	
+				navToggle.addEventListener('click', toggleHamburger);
+			</script>
+		</body>
+</html>

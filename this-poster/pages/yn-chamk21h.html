@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>pío, pío Graphic Club | 차차</title>
+		<link href="/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="/src/output.css" rel="stylesheet" type="text/css" media="all" />
+	</head>
+	</head>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const invitation = document.getElementById('invitation');
+
+			setTimeout(() => {
+				invitation.classList.add('fade-out');
+			}, 3000);
+
+			invitation.addEventListener('transitionend', function () {
+				if (invitation.classList.contains('fade-out')) {
+					invitation.remove();
+				}
+			});
+
+			const poster = document.getElementById('poster');
+			setTimeout(function () {
+				poster.classList.add('visible');
+			}, 3100);
+
+		});
+	</script>
+		<body class="bg-[url('/wall.jpg')] bg-contain bg-repeat-round">
+			<header class="top-0 fixed shadow-md z-50">
+				<h1 class="font-extralight text-xl p-4 bg-white w-[92px]">
+					<a href="/index.html">pío, pío Graphic Club</a>
+				</header>
+			<div id="invitation" class="z-10 fixed  bg-white w-full h-full">
+				<header class="top-0 fixed shadow-md">
+					<h1 class="font-extralight text-xl p-4 bg-white w-[92px]">
+						<a href="/index.html">pío, pío Graphic Club</a>
+					</header>
+				<content class="min-h-svh flex items-center justify-center">
+					<img src="/src/yn-chamk21h/invitation.webp" class="animate-pulse  xl:w-1/3" />
+				</content>
+			</div>
+	
+			<content
+				id="poster"
+				class="flex flex-col justify-center items-center p-4 min-h-svh"
+			>
+			<img src="/src/yn-chamk21h/poster.webp" class="z-100 xl:w-1/3 mt-20" />
+				
+				<a href="#text" class="absolute bottom-0">
+					<svg
+						class="animate-bounce"
+						width="25"
+						height="21"
+						viewBox="0 0 25 21"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M23.3253 1.25L12.5 20L1.67468 1.25L23.3253 1.25Z"
+							fill="#F0E97E"
+							stroke="black"
+						/>
+					</svg>
+				</a>
+			</content>
+			<content class="relative">
+			<article
+				id="text"
+				class="min-h-svh p-4 space-y-4 flex flex-col items-center justify-center "
+			>
+			<div class="bg-white p-4 xl:w-1/3">
+				<h1 class="font-bold text-3xl">이 포스터는</h1>
+				<h1 class="font-bold text-3xl">
+					어렴풋한 부티크 전시 포스터다.
+				</h1>
+				<p class="break-all">
+					이 전시는 조르주 페렉의 책
+			『어렴풋한 부티크』를 바탕으로 한다. 전시에 참여하는 124명의 작업자는
+			124개의 꿈 이야기를 각각 배정받아 시각예술로 풀어낸다. 개인의 꿈이 언어로
+			영구화되고, 그 언어가 제 3자를 만났을 때 다양하게 변주될 수 있는 가능성을
+			탐구한다.
+				</p>
+				<div class="flex justify-end items-center space-x-4">
+					<h1>차민경.차차</h1> <?xml version="1.0" encoding="utf-8"?>
+					<a href="https://www.instagram.com/_miinnnkyung/"><svg fill="#000000" width="30px" height="30px" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg">
+						<path d="M128,84a44,44,0,1,0,44,44A44.04978,44.04978,0,0,0,128,84Zm0,80a36,36,0,1,1,36-36A36.04061,36.04061,0,0,1,128,164ZM172,32H84A52.059,52.059,0,0,0,32,84v88a52.059,52.059,0,0,0,52,52h88a52.059,52.059,0,0,0,52-52V84A52.059,52.059,0,0,0,172,32Zm44,140a44.04978,44.04978,0,0,1-44,44H84a44.04978,44.04978,0,0,1-44-44V84A44.04978,44.04978,0,0,1,84,40h88a44.04978,44.04978,0,0,1,44,44ZM188,76a8,8,0,1,1-8-8A8.00917,8.00917,0,0,1,188,76Z"/>
+					  </svg></a>
+				</div>
+				
+			</div>
+			<a href="#poster" class="absolute bottom-0 rotate-180" style="margin:0 auto">
+				<svg
+					class="animate-bounce"
+					width="25"
+					height="21"
+					viewBox="0 0 25 21"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="M23.3253 1.25L12.5 20L1.67468 1.25L23.3253 1.25Z"
+						fill="#F0E97E"
+						stroke="black"
+					/>
+				</svg>
+			</a>
+			</article>
+		</content>
+			<nav
+				id="menu"
+				class="fixed inset-0 bg-black opacity-75 h-full w-full invisible z-50"
+			>
+				<ul
+					class="flex flex-col justify-center items-center h-full text-2xl font-extralight space-y-2 text-white"
+				>
+					<li><a href="/pages/yn-chamk21h.html">차차</a></li>
+					<li><a href="/pages/yn-sohnjy21h.html">군밤</a></li>
+					<li><a href="/pages/yn-kimnh21h.html">나현</a></li>
+					<li><a href="/pages/yn-parkws23h.html">우성</a></li>
+					<li><a href="/pages/yn-parkjy23h.html">서로</a></li>
+					<li><a href="/pages/yn-muny19h.html">율</a></li>
+					<li><a href="/pages/yn-jeonsb22h.html">수빈</a></li>
+					<li><a href="/pages/yn-parksm24h.html">모아</a></li>
+					<li><a href="/pages/yn-leeyn23h.html">소요</a></li>
+					<li><a href="/pages/yn-kimgh24h.html">과</a></li>
+					<li><a href="/pages/yn-hang24d.html">결</a></li>
+				</ul>
+			</nav>
+			<nav id="menu-button" class="bottom-0 right-0 fixed shadow-lg bg-white z-50">
+				<button class="p-4 w-fit">
+					<a class="nav-toggle">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</a>
+				</button>
+			</nav>
+			<script>
+				const menuButton = document.getElementById('menu-button');
+				const menu = document.getElementById('menu');
+	
+				console.log(menuButton, menu);
+				menuButton.addEventListener('click', () => {
+					menu.classList.toggle('invisible');
+				});
+	
+				let navToggle = document.querySelector('.nav-toggle');
+				let bars = document.querySelectorAll('.bar');
+	
+				function toggleHamburger(e) {
+					bars.forEach((bar) => bar.classList.toggle('x'));
+				}
+	
+				navToggle.addEventListener('click', toggleHamburger);
+			</script>
+		</body>
+</html>

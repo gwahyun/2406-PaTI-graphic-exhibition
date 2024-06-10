@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css');
+
+* {
+	font-family:
+		'Pretendard Variable',
+		Pretendard,
+		-apple-system,
+		BlinkMacSystemFont,
+		system-ui,
+		Roboto,
+		'Helvetica Neue',
+		'Segoe UI',
+		'Apple SD Gothic Neo',
+		'Noto Sans KR',
+		'Malgun Gothic',
+		'Apple Color Emoji',
+		'Segoe UI Emoji',
+		'Segoe UI Symbol',
+		sans-serif;
+	scroll-behavior: smooth;
+}
+
+#invitation {
+	display: inline-block;
+	transition: opacity 2s ease-out;
+}
+
+#invitation.fade-out {
+	opacity: 0;
+}
+
+#poster {
+	opacity: 0; /* 처음에 숨긴 상태로 시작 */
+	transition: opacity 2s ease-in;
+}
+
+#poster.visible {
+	opacity: 1; /* 보이는 상태 */
+}
+
+.nav-toggle {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 22px;
+	width: 22px;
+}
+
+.nav-toggle .bar {
+	height: 1px;
+	width: 100%;
+	background-color: black;
+	transition: all 100ms ease-in-out;
+}
+
+.nav-toggle:hover {
+	cursor: pointer;
+}
+
+.x:nth-of-type(1) {
+	transition: all 100ms ease-in-out;
+	transform: rotate(45deg);
+	transform-origin: top left;
+	width: 28px;
+}
+
+.x:nth-of-type(2) {
+	transition: all 100ms ease-in-out;
+	transform-origin: center;
+	width: 0;
+}
+
+.x:nth-of-type(3) {
+	transition: all 100ms ease-in-out;
+	transform: rotate(-45deg);
+	transform-origin: bottom left;
+	width: 28px;
+}
